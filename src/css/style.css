@@ -1,0 +1,431 @@
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Fonts/IRANSansFaNum_Medium.eot");
+  src: url("../fonts/IRANSansWebFaNum.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */ url("../fonts/IRANSansWebFaNum.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("../fonts/IRANSansWebFaNum.woff")
+      format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/IRANSansWebFaNum.ttf")
+      format("truetype");
+}
+
+body {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.accountType {
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+.accountType .toggleAccount {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.operation .toggleKarmozd {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.accountType span {
+  font-size: medium;
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.toggleAccount {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 7px;
+}
+.toggleKarmozd {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.toggleAccount .toggleSelect__link {
+  flex: 0 0 50%;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 45px;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  /* padding: 5px 10px; */
+}
+.toggleKarmozd .toggleSelect__link {
+  flex: 0 0 50%;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 45px;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  /* padding: 5px 10px; */
+}
+
+.percentage {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  border-radius: 7px;
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  border-radius: 7px;
+}
+
+.percentage .toggleSelect__link {
+  flex: 0 0 50%;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 45px;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  /* padding: 5px 10px; */
+}
+
+.payment .toggleSelect__link {
+  flex: 0 0 50%;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 45px;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  /* padding: 5px 10px; */
+}
+
+.percentage .toggleSelect__link--active {
+  background-color: #f0f0f0;
+}
+.payment .toggleSelect__link--active {
+  background-color: #f0f0f0;
+}
+
+.amountInput input[type="text"] {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  border-radius: 7px;
+  font-size: 18px;
+  background: transparent;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.toggle-columns {
+  margin-bottom: 10px;
+}
+
+.operation,
+.amountInput,
+.rows,
+.columns,
+.updates {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.updates button {
+  width: 100%;
+
+  border-radius: 7px;
+  height: 45px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-pane {
+  display: flex;
+  justify-content: center;
+}
+
+.result-container {
+  /* padding: 15px; */
+  border-radius: 10px;
+}
+
+.title-result h4 {
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.result-box {
+  padding: 0 15px;
+}
+.result-box .result-col:last-child {
+  border-bottom: none;
+}
+.title-result {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.result-col {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 16px;
+}
+.changeselect__link svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.section-calculator {
+  padding: 15px;
+}
+
+.range-col {
+  margin-top: 50px;
+}
+.range-col input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #d4fff9; /* Default track color */
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.range-col input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #007261; /* Thumb color */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-col input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #007261; /* Thumb color */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Disabled Range Input */
+.range-col input[type="range"].disabled-range {
+  background: #ccc !important; /* Gray background */
+  cursor: not-allowed;
+}
+
+/* Disabled Thumb */
+.range-col input[type="range"].disabled-range::-webkit-slider-thumb {
+  background: #888 !important; /* Gray thumb */
+  cursor: not-allowed;
+}
+
+.range-col input[type="range"].disabled-range::-moz-range-thumb {
+  background: #888 !important; /* Gray thumb */
+  cursor: not-allowed;
+}
+
+.amountInput label {
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+}
+.amountInput input:focus + label,
+.amountInput input:valid + label {
+  font-size: 12px;
+  top: 0px;
+}
+.amountInput input:focus {
+  outline: none;
+}
+.amountInput {
+  position: relative;
+}
+
+/*light mode*/
+.light-mode .toggleAccount {
+  border: 1px solid #007261;
+}
+.light-mode .toggleKarmozd {
+  border: 1px solid #007261;
+}
+.light-mode .toggleSelect__link--active {
+  background-color: #007261;
+  color: #fff;
+}
+.light-mode .percentage {
+  border: 1px solid #007261;
+}
+.light-mode .payment {
+  border: 1px solid #007261;
+}
+.light-mode .amountInput input[type="text"] {
+  border: 1px solid #007261;
+}
+.light-mode .updates button {
+  border: 1px solid #007261;
+  background-color: #007261;
+  color: #fff;
+}
+.light-mode .result-container {
+  background: #fff;
+  box-shadow: 0 0 20px 0px #dddddd;
+}
+.light-mode .title-result h4 {
+  color: #b58202;
+}
+.light-mode .result-col span {
+  color: #000;
+}
+.light-mode .result-col {
+  color: #b58202;
+}
+
+.head-range {
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.head-range label,
+.head-range span {
+  font-size: medium;
+}
+
+.light-mode .head-range label {
+  color: #444444;
+}
+
+.light-mode .head-range span {
+  color: #b58202;
+  margin-right: 3px;
+}
+.light-mode .amountInput label {
+  background: #fff;
+
+  color: #444444;
+}
+.light-mode .loader {
+  border: 4px solid #ddd;
+
+  border-top: 4px solid #007261;
+}
+/*light mode*/
+/*dark mode*/
+/*light mode*/
+.dark-mode {
+  background: #313131;
+  color: #a9a9a9;
+}
+.dark-mode .toggleAccount {
+  border: 1px solid #007261;
+  color: #a9a9a9;
+}
+.dark-mode .toggleKarmozd {
+  border: 1px solid #007261;
+  color: #a9a9a9;
+}
+.dark-mode .toggleSelect__link--active {
+  background-color: #007261;
+  color: #fff;
+}
+.dark-mode .percentage {
+  border: 1px solid #007261;
+}
+.dark-mode .payment {
+  border: 1px solid #007261;
+}
+.dark-mode .amountInput input[type="text"] {
+  border: 1px solid #007261;
+  background: none;
+  color: #fff;
+}
+.dark-mode .updates button {
+  border: 1px solid #007261;
+  background-color: #007261;
+  color: #fff;
+}
+.dark-mode .result-container {
+  background: #262626;
+  box-shadow: 0 0 20px 0px #262626;
+}
+.dark-mode .title-result h4 {
+  color: #b58202;
+}
+.dark-mode .result-col span {
+  color: #fff;
+}
+.dark-mode .result-col {
+  color: #b58202;
+  border-bottom: 1px solid #007261;
+}
+
+.dark-mode .head-range span {
+  color: #b58202;
+  margin-right: 3px;
+}
+.dark-mode .title-result {
+  border-bottom: 1px solid #007261;
+}
+.dark-mode .amountInput label {
+  background: #313131;
+
+  color: #a9a9a9;
+}
+.dark-mode .loader {
+  border: 4px solid #313131;
+
+  border-top: 4px solid #b58202;
+}
+/*dark mode*/

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehsan</title>
+</head>
+
+<body>
+    <div id="sectionCalculator" class="section-calculator ">
+        <div class="accountType">
+            <span>
+                نوع حساب
+            </span>
+            <div class="toggleAccount">
+                <div id="toggleEhsan0" class="toggleSelect__link toggleSelect__link--active" data-value="0.5">احسان 0.5
+                    درصد</div>
+                <div id="toggleEhsanNim" class="toggleSelect__link" data-value="0">احسان 0 درصد</div>
+            </div>
+        </div>
+        <div class="input-columns">
+            <div class="amountInput">
+                <input type="text" autocomplete="off" id="amountInput" inputmode="numeric" required value="">
+                <label id="amountInputLabel" for="amountInput">مبلغ تسهیلات</label>
+                <div id="messageContainer"></div>
+            </div>
+
+        </div>
+        <div class="operation">
+            <div class="toggleKarmozd">
+                <div id="toggleRequest" class="toggleSelect__link toggleSelect__link--active" data-value="facilities">
+                    تسهیلات</div>
+                <div id="toggleDeposit" class="toggleSelect__link" data-value="deposit">سپرده</div>
+            </div>
+        </div>
+        <div class="toggle-columns">
+            <div class="percentage">
+                <div id="toggleZeroPercent" class="toggleSelect__link toggleSelect__link--active" data-value="0">کارمزد
+                    0 درصد</div>
+                <div id="toggleFourPercent" class="toggleSelect__link " data-value="4">کارمزد
+                    4 درصد
+                </div>
+            </div>
+        </div>
+        <div class="toggle-columns">
+            <div class="payment">
+                <div id="toggleMultiTime" class="toggleSelect__link toggleSelect__link--active" data-value="multi">
+                    بازپرداخت چند مرحله ای </div>
+                <div id="toggleOneTime" class="toggleSelect__link" data-value="single">بازپرداخت یکجا (6 ماه بعد)
+                </div>
+            </div>
+        </div>
+
+        <div class="range-col">
+            <div class="rows">
+                <div class="head-range">
+                    <label>
+                        مدت سپرده گذاری
+                    </label>
+                    <span id="rangeValue">1ماهه </span>
+                </div>
+
+                <input type="range" id="rows" min="1" max="4" value="1">
+            </div>
+
+            <div class="columns">
+                <div class="head-range">
+                    <label>
+                        دوره باز پرداخت
+                    </label>
+                    <span id="rangeValueColumns"> 2ماهه </span>
+                </div>
+
+                <input type="range" id="columns" min="1" max="5" value="1">
+            </div>
+        </div>
+
+        <div class="range-col">
+            <div class="rows">
+                <div class="head-range">
+                    <label>
+                        مدت سپرده گذاری
+                    </label>
+                    <span id="rangeValuePayment">1ماهه </span>
+                </div>
+
+                <input type="range" id="rowsPayment" min="1" max="4" value="1">
+            </div>
+        </div>
+
+        <div class="updates">
+            <button id="calculateBtn">محاسبه</button>
+        </div>
+
+        <div class="loader-pane">
+            <div id="loader" class="loader"></div>
+        </div>
+
+        <div class="result-container" id="resultContainer" style="display:none;">
+            <div class="title-result">
+                <h4>نتیجه محاسبه‌</h4>
+            </div>
+            <div class="result-box">
+                <div class="result-col" id="arrayResult"></div>
+                <div class="result-col" id="arrayResultp"></div>
+                <div class="result-col" id="formulaResult"></div>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="src/index.js"></script>
+</body>
+
+</html>
