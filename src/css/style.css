@@ -18,15 +18,17 @@ body {
 }
 .accountType {
   margin-top: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .accountType .toggleAccount {
   margin-top: 10px;
   margin-bottom: 10px;
+  height: 40px;
 }
 .operation .toggleKarmozd {
   margin-top: 10px;
   margin-bottom: 10px;
+  height: 40px;
 }
 .accountType span {
   font-size: medium;
@@ -35,6 +37,7 @@ body {
 }
 
 .toggleAccount {
+  height: 20px;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -54,7 +57,7 @@ body {
   border-radius: 0;
   display: flex;
   justify-content: center;
-  min-height: 45px;
+  min-height: 40px;
   align-items: center;
   font-size: 16px;
   cursor: pointer;
@@ -67,7 +70,7 @@ body {
   border-radius: 0;
   display: flex;
   justify-content: center;
-  min-height: 45px;
+  min-height: 40px;
   align-items: center;
   font-size: 16px;
   cursor: pointer;
@@ -78,7 +81,7 @@ body {
   display: flex;
   justify-content: center;
   overflow: hidden;
-
+  height: 40px;
   border-radius: 7px;
 }
 
@@ -86,7 +89,7 @@ body {
   display: flex;
   justify-content: center;
   overflow: hidden;
-
+  height: 40px;
   border-radius: 7px;
 }
 
@@ -97,7 +100,7 @@ body {
   border-radius: 0;
   display: flex;
   justify-content: center;
-  min-height: 45px;
+  min-height: 40px;
   align-items: center;
   font-size: 16px;
   cursor: pointer;
@@ -111,7 +114,7 @@ body {
   border-radius: 0;
   display: flex;
   justify-content: center;
-  min-height: 45px;
+  min-height: 40px;
   align-items: center;
   font-size: 16px;
   cursor: pointer;
@@ -145,13 +148,13 @@ body {
 .rows,
 .columns,
 .updates {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .updates button {
   width: 100%;
-
+  margin-top: 20px;
   border-radius: 7px;
   height: 45px;
   font-size: 18px;
@@ -223,7 +226,7 @@ body {
 }
 
 .range-col {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .range-col input[type="range"] {
   -webkit-appearance: none;

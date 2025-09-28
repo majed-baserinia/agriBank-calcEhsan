@@ -129,9 +129,9 @@ function calculateResults() {
     }
 
 
-    let arrayResultText = "نرخ سود :" + "<span>" + selectedValue1 + "</span>";
+    // let arrayResultText = "نرخ سود :" + "<span>" + selectedValue1 + "</span>";
 
-    document.getElementById("arrayResult").innerHTML = arrayResultText;
+    // document.getElementById("arrayResult").innerHTML = arrayResultText;
 
     if (operation === "facilities") {
         let formulaResultText = "محاسبه سپرده: " + "<span>" + separateAmountByThousands(result) + " ریال " + "</span>";
